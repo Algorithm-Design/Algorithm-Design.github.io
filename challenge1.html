@@ -59,14 +59,13 @@
                 z-index: 900;
             }
         </style>
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/dygraph/1.1.1/dygraph-combined.js"></script>
     </head>
     <body>
         <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
             <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
                 <div class="mdl-layout__header-row">
-                    <span class="mdl-layout-title">WT Algorithm Design Dashboard</span>
+                    <span class="mdl-layout-title">WT Algorithm Design</span>
                     <div class="mdl-layout-spacer"></div>
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
 
@@ -117,17 +116,28 @@
                     <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
                         <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
                             <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
-                                <h2 class="mdl-card__title-text">Updates</h2>
+                                <h2 class="mdl-card__title-text">Results</h2>
                             </div>
                             <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-                                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                              (I kind of like the dog, so I'm keeping it here...)
+                              <p>
+                                <iframe src="run_times/rankings-challenge1.html"></iframe>
+                              </p>
+
+                              <!-- <?php
+	                              $f = fopen("rankings-challenge1.txt", "r");
+	                              while(!feof($f)) {
+	                                 echo fgets($f) . "<br />";
+	                              }
+
+	                              fclose($f);
+                              ?> -->
                             </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read More</a>
-                            </div>
+
                         </div>
                         <div class="demo-separator mdl-cell--1-col"></div>
                     </div>
+
                     <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col">
                         <div class="mdl-card__title">
                             <div class="mdl-card__title-text">
@@ -135,7 +145,7 @@
                             </div>
                         </div>
                         <div class="mdl-card__supporting-text">
-                            All times are in seconds. Highlight an area on the graph to zoom in.
+                            Highlight an area on the graph to zoom in.
                         </div>
                         <div class="mdl-card__actions mdl-card--border"></div>
                         <div id="graphdiv" style="width:600px"></div>
